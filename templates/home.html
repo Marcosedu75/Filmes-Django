@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}Página Inicial - Biblioteca Django{% endblock %}
+
+{% block content %}
+    <h1>Bem-vindo à Biblioteca!</h1>
+    <p>Este é o seu projeto de gerenciamento de livros feito com Django.</p>
+    <p>Use o menu de navegação no topo da página para listar os livros ou acessar outras áreas do site.</p>
+    <p><a href="{% url 'livro_list' %}" class="button">Ver lista de livros</a></p> 
+{% endblock %}
